@@ -1,0 +1,65 @@
+* {
+    font-family: 'Pixelify Sans', cursive;
+    color: rgb(232, 232, 232);
+  
+  }
+  
+  .background {
+  width: 600px;
+  height: 600px;
+  border-radius: 60px;
+  padding: 60px;
+  margin: 60px;
+  background-image: url(https://f.i.uol.com.br/fotografia/2022/07/16/165797621362d2b59533a92_1657976213_3x2_md.jpg);
+  }
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(116, 12, 244);}
+  
+  .ola {
+  color: aliceblue;
+  font-family: 'Permanent Marker', cursive;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .button {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background: #111;
+    position: relative;
+    border-radius: 15px;
+    user-select: none;
+    -webkit--user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .button:before {
+    content: "opa";
+    background: linear-gradient(
+      
+      #f70505,
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    transition: opactiy 0.3s ease-in-out;
+    border-radius: 20px;
+  }
+
+  
+  input{
+  background-color: transparent;
+  }
